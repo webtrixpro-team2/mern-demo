@@ -1,5 +1,4 @@
 _id,css
-62ac196dd15454b63f33cb43,"body{padding: 50px;font: 14px ""Lucida Grande"", Helvetica, Arial, sans-serif;}"
 62ac19a2d15454b63f33cb44,a{color: #00B7FF;}
 62ac19b5d15454b63f33cb45,img{display:none;}
 62ac19c4d15454b63f33cb46,#maincounter-wrap{text-align:center}
@@ -7,8 +6,11 @@ _id,css
 62ac19e1d15454b63f33cb48,#maincounter-wrap span{font-size:25px}
 62ac19edd15454b63f33cb49,#page-top{display:none}
 62ac19fed15454b63f33cb4a,#root>div>div>div:nth-child(5){display:none}
-62ac1a1dd15454b63f33cb4b,.container{width:800px;margin:auto;background-color:#f0f8ff;padding:20px;border:1px solid #4c96d7;border-radius:10px}
+62ac1a1dd15454b63f33cb4b,.maincontainer{width:800px;margin:auto;background-color:#f0f8ff;padding:20px;border:1px solid #4c96d7;border-radius:10px}
 62ac1a2bd15454b63f33cb4c,div#page-top{text-align:center;margin-bottom:20px}
 62ac1a44d15454b63f33cb4e,.maincounter-number span{font-size:20px;color:deeppink !important}
-62ac1a5fd15454b63f33cb4f,a{display:none}
 62ac1a6ad15454b63f33cb50,h1{margin-bottom:2px}
+62b08ca6db2edb6b03fa246f,.flip_cases_front{display:none !important}
+62b08db2db2edb6b03fa2470,#root > main > div.maincontainer > div.content-inner > div.row > div.col-md-6.col-md-offset-3 { width: 100%}
+62b0950ddb2edb6b03fa2471,.maincontainer {overflow: auto;max-height: calc(100vh - 172px);}
+62b0969cdb2edb6b03fa2472,.nav-link.current {color: #000;background-color: #ddd;}

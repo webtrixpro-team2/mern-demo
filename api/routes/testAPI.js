@@ -56,7 +56,10 @@ async function start() {
     const page = await browser.newPage()
     await page.goto("https://www.worldometers.info/coronavirus/country/us")
     const response = await page.evaluate(() => {
-        return document.querySelector("body > div:nth-child(10) > div:nth-child(2) > div.col-md-8 > div").outerHTML;
+        var content = document.querySelector("body > div:nth-child(10) > div:nth-child(2) > div.col-md-8 > div").outerHTML;
+        content += "<h4>Timeline of Events</h4>";
+        content += document.querySelector("#innercontent > div.spaced").outerHTML;
+        return content
     })
     await browser.close()
     return response;
