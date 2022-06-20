@@ -3,11 +3,18 @@ const chromium = require('chrome-aws-lambda');
 const playwright = require('playwright-core');
 var router = express.Router();
 const { MongoClient } = require('mongodb');
+const fs = require('fs');
+const path = '/var/www/design.webtrixpro.net/node/mern/downloaded/';
 
 router.get("/", async function (req, res, next) {
     try {
-        const rr = await start()
-        res.send(rr);
+        const response = await start()
+        //Store into local file
+        fs.writeFileSync(path + '/response.html', response);
+
+        //Read From local file
+        var file = fs.readFileSync(path +  '/response.html');
+        res.send(file);
     } catch (err) {
         console.log(err);
         res.sendStatus(500);
@@ -30,10 +37,8 @@ router.get("/style.css", async function (req, res, next) {
         });
 
         client.close();
-
         res.setHeader('content-type', 'text/css');
         res.send(cssText);
-
     } catch (err) {
         console.log(err)
         res.sendStatus(500);
