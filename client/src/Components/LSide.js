@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 const LSide = () => {
     return (
@@ -10,11 +10,19 @@ const LSide = () => {
             <hr />
             <ul className="nav nav-pills flex-column mb-auto">
                 <li className="nav-item">
-                    <Link to="/" className="nav-link current">Home</Link>
+                    <NavLink to="/" className="nav-link">Crawl</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to="/about" className="nav-link">About</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to="/terms-condition" className="nav-link">Terms Condition</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to="/privacy-policy" className="nav-link">Privacy Policy</NavLink>
                 </li>
             </ul>
         </div>
-
     );
 }
 

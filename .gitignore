@@ -102,4 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
-api/downloaded/response.html
+api/downloaded/
+
+api/public/static/js/
